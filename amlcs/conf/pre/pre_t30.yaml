@@ -1,0 +1,12 @@
+#Configuration
+Nens: 80
+M: 30
+res_name: t30
+per: 0.05
+obs_steps: 2
+ini_steps: 3
+ini_times: 12
+syn_tests: False # Use synthetic observations
+folder_prep: ../NLD_Paper #Create Pre-processing folder in this path 
+code: 
+par: True

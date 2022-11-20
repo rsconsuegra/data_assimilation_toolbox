@@ -1,0 +1,15 @@
+t21: 
+    lat: 32 
+    lon: 64
+t30: 
+    lat: 48 
+    lon: 96
+t47: 
+    lat: 72 
+    lon: 144
+t63: 
+    lat: 96 
+    lon: 192
+t106: 
+    lat: 160 
+    lon: 320
