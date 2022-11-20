@@ -33,7 +33,7 @@ def check_file_status(filepath, filesize):
 # pswd = input('Password: ')
 
 url = 'https://rda.ucar.edu/cgi-bin/login'
-values = {'email' : 'omejiaa@uninorte.edu.co' , 'passwd' : 'Omar_080500', 'action' : 'login'}
+values = {'email' : 'omejiaa@uninorte.edu.co' , 'passwd' : '', 'action' : 'login'}
 # Authenticate
 ret = requests.post(url,data=values)
 if ret.status_code != 200:

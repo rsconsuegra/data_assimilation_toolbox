@@ -7,13 +7,14 @@ log = logging.getLogger(__name__)
 
 class FileManager:
     def __init__(self, comp_model_path) -> None:
-        pass
+        self.snapshots = comp_model_path / "snapshots"
+        self.ensemble_0 = comp_model_path / "ensemble_0"
 
     @staticmethod
     def create_model_folders(Nens, res_name, comp_model_path) -> None:
         log.info("Creating folders")
         (comp_model_path / "snapshots").mkdir(exist_ok=True)
-        ensemble_0 = comp_model_path / "ensemble_0"
+        
         ensemble_0.mkdir(exist_ok=True)
         model_local = comp_model_path / "source_local"
         (comp_model_path / "free_run").mkdir(exist_ok=True)
