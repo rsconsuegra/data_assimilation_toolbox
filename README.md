@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# data_assimilation_toolbox
-=======
 # AMLCS
 <img src="https://aml-cs.github.io/images/logo.jpg">
 
@@ -14,4 +11,3 @@ If you use this repo, please cite the following paper:
 
 1. Nino-Ruiz, E. D., Guzman-Reyes, L. G., & Beltran-Arrieta, R. (2020). An adjoint-free four-dimensional variational data assimilation method via a modified Cholesky decomposition and an iterative Woodbury matrix formula. Nonlinear Dynamics, 99(3), 2441-2457.
 2. Nino-Ruiz, E. D., Sandu, A., & Deng, X. (2018). An ensemble Kalman filter implementation based on modified Cholesky decomposition for inverse covariance matrix estimation. SIAM Journal on Scientific Computing, 40(2), A867-A886.
->>>>>>> f60abc1 (initial refacto)
