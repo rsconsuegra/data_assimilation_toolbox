@@ -1,0 +1,13 @@
+hydra:
+  run:
+    dir: ./logs
+  output_subdir: null
+  sweep:
+    dir: .
+    subdir: .
+
+defaults:
+  - _self_
+  - pre: pre_t21
+  - model_res: speedy
+  - override hydra/job_logging: logging

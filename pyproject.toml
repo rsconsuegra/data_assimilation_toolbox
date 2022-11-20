@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "amlcs"
+version = "0.0.2"
+description = "Data Assimilation Package using SPEEDY model. Developed by AML-CS at Uninorte"
+authors = ["Elias Niño"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+hydra-core = "^1.2.0"
+hydra-colorlog = "^1.2.0"
+flake8 = "^5.0.4"
+black = "^22.10.0"
+bandit = "^1.7.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
