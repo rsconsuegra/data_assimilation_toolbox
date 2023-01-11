@@ -13,3 +13,14 @@ t63:
 t106: 
     lat: 160 
     lon: 320
+variables:
+    "UG0": 8
+    "VG0": 8
+    "TG0": 8
+    "TRG0": 8
+    "PSG0": 1
+    "UG1": 8
+    "VG1": 8
+    "TG1": 8
+    "TRG1": 8
+    "PSG1": 1

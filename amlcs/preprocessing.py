@@ -7,7 +7,7 @@ from omegaconf import DictConfig, OmegaConf
 
 from amlcs import RESULTS_FOLDER
 from amlcs.utils.file_manager import FileManager as FM
-
+from amlcs.numerical_models.numerical_model import NumericalModel
 log = logging.getLogger(__name__)
 
 
@@ -27,7 +27,6 @@ class Preprocessing:
         self.exe_model_path: Path = None
         self.cfg: DictConfig = cfg.pre
         self.res: Dict = cfg.model_res.get(self.cfg.res_name)
-        self.FM = FM()
         log.info(f"{self.cfg.res_name.upper()} resolution will be used")
         log.info("Parameters: %s", OmegaConf.to_yaml(self.cfg))
 
@@ -45,7 +44,9 @@ class Preprocessing:
         log.info(f"{self.exe_model_path} folder created")
 
     def set_numerical_model(self) -> None:
-        FM.create_model_folders(self.cfg.Nens, self.cfg.res_name, self.exe_model_path)
+        file_manager = FM(self.cfg.exe_model_path)
+        file_manager.create_model_folders(self.cfg.Nens, self.cfg.res_name)
+        numerical_model = NumericalModel(self.cfg.model_res, self.cfg.res_name)
 
 
 if __name__ == "__main__":
